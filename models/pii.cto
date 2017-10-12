@@ -1,0 +1,27 @@
+/**
+ * create by zhaoliang 2017-10-12
+ */
+
+//定义模型文件
+namespace org.acme.pii
+
+//定义营业执照 -资产
+asset Business identified by id {
+  o String id   //主键
+  o String registerNumber  //注册号
+  o String name  //企业名称
+  o String type  //企业类型
+  o String abode //住所
+  o String legalRepresentative //法定代表人
+  o String registerCapital //注册资本
+  o String createDate //成立日期
+  o String businessTerm //营业期限
+  o String scopeOfBusiness //经营范围
+  o String registerAuthority  //登记机关
+  o String registerDate //登记日期
+}
+
+//定义测试接口
+transaction Offer {
+  o String test
+}

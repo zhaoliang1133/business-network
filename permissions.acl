@@ -1,0 +1,12 @@
+/**
+ * create by zhaoliang 2017-10-12
+ */
+
+//权限管理-全部允许
+rule AuthorizeAccessTransaction {
+    description: "允许所有人操作"
+    participant: "ANY"
+    operation: ALL
+    resource: "org.acme.pii.Business"
+    action: ALLOW
+}

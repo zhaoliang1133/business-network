@@ -1,0 +1,26 @@
+/**
+ * create by zhaoliang 2017-10-12
+ */
+
+//根据注册号查询
+query selectFromRegisterNumber {
+  description: "根据注册号查询"
+  statement:
+      SELECT org.acme.pii.Business
+          WHERE (registerNumber==_$registerNumber)
+}
+
+//根据企业名称查询
+query selectFromName {
+  description: "根据企业名称查询"
+  statement:
+      SELECT org.acme.pii.Business
+          WHERE (name == _$name)
+}
+
+//查询所有的
+query selectAll {
+  description: "查询所有"
+  statement:
+      SELECT org.acme.pii.Business
+}
